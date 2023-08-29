@@ -1,0 +1,94 @@
+.top-characters {
+  flex-direction: column;
+  text-align: center;
+}
+
+table {
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbjOHCw2pwjjUvQW4HsEctQyfzWcDmMAjr4ay6xj_zEZVpJQjm_JPdlkb3Lv64vVqRrQ0&usqp=CAU);
+  background-position: center;
+}
+
+.name {
+  width: 45%;
+}
+.skillset {
+  width: 45%;
+}
+.votes {
+  width: 10%;
+}
+
+td,
+th {
+  border: 1px solid #aaaaaa;
+  padding: var(--5px);
+}
+
+th {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.dark {
+  background-color: rgba(221, 221, 221, 0.882);
+}
+
+.light {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-container {
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 3px solid var(--black);
+  border-radius: var(--10px);
+  margin: var(--10px);
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.card-title {
+  position: absolute;
+  background-color: rgba(180, 180, 180, 0.5);
+  box-shadow: 0 5px 5px 5px rgba(180, 180, 180, 0.5);
+  line-height: 1;
+  width: 100%;
+  color: var(--white);
+  padding: var(--5px);
+}
+
+.card-title h2 {
+  font-size: 2rem;
+}
+
+.card-title h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+p {
+  line-height: 1.2;
+  height: 50%;
+  padding: var(--5px);
+  margin: 0;
+}
