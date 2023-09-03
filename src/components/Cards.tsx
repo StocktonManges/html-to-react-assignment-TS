@@ -1,11 +1,11 @@
 import { Component } from "react";
 import { Character } from "../../public/fma-data";
 
-export class Cards extends Component<{ charDetails: Character[] }> {
+export class Cards extends Component<{ characters: Character[] }> {
   render() {
     return (
       <div key="hello world" className="card-container container">
-        {this.props.charDetails.map((char, index) => {
+        {this.props.characters.map((char, index) => {
           return (
             <div key={index} className="card">
               <div className="card-title">

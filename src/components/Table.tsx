@@ -1,10 +1,10 @@
 import { Character } from "../../public/fma-data";
 
-type CharObj = {
-  charDetails: Character[];
+type TableProps = {
+  characters: Character[];
 };
 
-export function Table(sortedData: CharObj) {
+export function Table({ characters }: TableProps) {
   return (
     <div key="Top Characters" className="top-characters container">
       <h2>Top Characters</h2>
@@ -15,7 +15,7 @@ export function Table(sortedData: CharObj) {
             <th className="skillset">Skillset</th>
             <th className="votes">Votes</th>
           </tr>
-          {sortedData.charDetails.map((char: Character, index: number) => {
+          {characters.map((char: Character, index: number) => {
             if (index < 5) {
               return (
                 <tr key={index} className={index % 2 === 0 ? "dark" : "light"}>
