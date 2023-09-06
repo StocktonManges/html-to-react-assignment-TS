@@ -1,7 +1,8 @@
 import { Component } from "react";
 import { Character } from "../../public/fma-data";
+type CardsProps = { characters: Character[] };
 
-export class Cards extends Component<{ characters: Character[] }> {
+export class Cards extends Component<CardsProps> {
   render() {
     return (
       <div key="hello world" className="card-container container">
